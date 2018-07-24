@@ -1,0 +1,87 @@
+/* Q1 */
+.logo{
+  color: red;
+}
+/* Q2 */
+nav a{
+  color: green;
+}
+/* Q3 */
+nav a:visited{
+  color:#444;
+}
+/* Q4 */
+.card{
+  color: white;
+}
+/* Q5 */
+.card button{
+  background-color: lightgreen;
+  color: white;
+}
+
+/* Q6 */
+article p::first-letter{
+  margin-left: 30px;
+}
+
+/* Q7 */
+.blog{
+  background-color: #666;
+  color: #cff;
+}
+
+/* Q8 */
+.gallery figure:hover{
+  box-shadow: 5px 10px #444;
+}
+
+/* Q9 */
+.gallery figcaption{
+  padding: 8px;
+}
+
+/* Q11 */
+article{
+  margin-top: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Q12 */
+.article-title{
+  text-align: center;
+}
+
+/* Q13 */
+.section-header{
+  text-transform: uppercase;
+}
+
+/* Q14 Q15 Q16*/
+.form-input{
+  display: block;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+/* Q17 */
+footer{
+  background-color: rgb(68, 65, 65);
+  color: #ffc266;
+}
+
+/* Q18 */
+.form-input:focus{
+  border-width: 4px;
+}
+/* Q19 */
+section h2::before{
+  content: ">";
+  margin-right: 4px;
+}
+/* Q20 */
+input[type="radio"]{
+  margin-left: 20px;
+  margin-right: 5px;
+}

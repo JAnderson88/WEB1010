@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Nobile" rel="stylesheet">
+    <title>Invoice App</title>
+    <style>
+        body {
+            margin: 10% 4% 4% 4%;
+        }
+
+        .userContainer {
+            display: flex;
+            height: 25em;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .invoiceContainer {
+            margin-top: 4em;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: auto;
+        }
+
+        .userProfile {
+            border: 1px solid black;
+            display: flex;
+            width: 60%;
+            height: 100%;
+        }
+
+        .user {
+            height: auto;
+        }
+
+        #picContainer {
+            width: 40%;
+            margin: 8% 0% 8% 3%;
+            background-color: #4D6076;
+        }
+
+        #infoContainer {
+            margin: 5% 2% 2% 2%;
+            width: 60%;
+            font-family: Nobile;
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 22px;
+        }
+
+        img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .invoice {
+            border: 1px solid black;
+            margin: 6% 3% 0% 3%;
+            padding: 2%;
+            width: 250px;
+            height: auto;
+
+        }
+
+        .invoice>p {
+            position: relative;
+            margin: 5px;
+            left: 25%;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        //Fake it til you make it Database
+        var user = {
+            name: "",
+            companyName: "",
+            address: "",
+            email: "",
+            picture: ""
+        }
+
+        var invoices = [
+            {
+                inv_id: "0156321",
+                companyName: user.companyName,
+                date: "9/7/2017",
+                order: "Dell Computers",
+                amount: 3,
+                cost: 3457.67,
+                paid: 3457.67
+            },
+            {
+                inv_id: "0145632",
+                companyName: user.companyName,
+                date: "1/5/2017",
+                order: "HP Printers",
+                amount: 2,
+                cost: 248.00,
+                paid: 150.00
+            },
+            {
+                inv_id: "0132110",
+                companyName: user.companyName,
+                date: "6/14/2016",
+                order: "Marketing Coffee Mugs",
+                amount: 160,
+                cost: 414.00,
+                paid: 414.00
+            }
+
+        ]
+
+
+        //element selectors
+
+
+        //adding invoices
+        for(var i=0; i<invoices.length; i++){
+            document.querySelector('.invoiceContainer').innerHTML += `
+            <div class="invoice" id=${invoices[i].inv_id}>
+                Invoice #:   <br/>    
+                <p>${} </p>
+                Company Name:   <br /> 
+                <p>${} </p>
+                Date:  <br />
+                <p> ${} </p>
+                Order:  <br />   
+                <p>${} </p>
+                Amount:   <br />     
+                <p>${} </p>
+                Cost:       <br />    
+                <p>$${} </p>
+                Paid:       <br />   
+                <p> $${} </p>
+                Owed:        <br />   
+                <p>$${} </p>
+            </div>
+            `
+        }
+
+    </script>
+</body>
+
+</html>

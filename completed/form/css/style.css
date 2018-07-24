@@ -1,0 +1,49 @@
+body{
+  margin: 0;
+  padding:0
+}
+
+header{
+  border-bottom: 1px solid black;
+  min-width: 100vw;
+  min-height: 10vh;
+  font-size: 28px;
+  padding: 4vh 2vw 0vh 2vw;
+}
+
+header span{
+  float: right;
+  margin-right: 10vw;
+}
+
+header a{
+  font-size: 14px;
+}
+
+.sidebar{
+  display: inline-block;
+  border-right: 1px solid black;
+  min-width: 30vw;
+  min-height: 700px;
+}
+main{
+  position: absolute;
+  display:inline-block;
+  min-width: 69vw;
+  min-height: 700px;
+}
+footer{
+  position: absolute;
+  min-width: 100vw;
+  border-top: 1px solid black;
+  padding-left: 2vw;
+}
+
+form{
+  margin: 8vh 0vw 0vh 20vw;
+}
+
+form input{
+  display: block;
+  margin-bottom: 2vh;
+}

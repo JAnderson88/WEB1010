@@ -1,0 +1,1 @@
+This is the starter folder for the css-practice. This exercise is used for preperation for the midterm for WEB1010. Clone the repository using git clone, and add it to your code folder. The instructions are inside the project, please read carefully the instructions. You will be working in groups, but with very little teacher help.
